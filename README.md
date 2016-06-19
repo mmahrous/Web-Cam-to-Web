@@ -1,9 +1,9 @@
 # Web-Cam-to-Web
 This project is using node.js 
-I wrote this code I had a web camera and a Raspberry Pi 2, but I don't want to buy the Pi Camera module so I hacked the code form [Raspberry Pi, Camera and Node.js – Live Streaming with Websockets #IoT](http://thejackalofjavascript.com/rpi-live-streaming/) I wanted to create a Babby Monitor so here is it
+I wrote this code I had a USB web camera and a Raspberry Pi 2, but I don't want to buy the Pi Camera module so I hacked the code form [Raspberry Pi, Camera and Node.js – Live Streaming with Websockets #IoT](http://thejackalofjavascript.com/rpi-live-streaming/) I wanted to create a Babby Monitor so here you go, it doesn't support a sound yet but I'm working on it
 ### What you need:
 1- Raspberry Pi.
-2- Web Camera.
+2- USB Web Camera.
 3- Rasspian prefaded the latest version.
 
 ### Action:
@@ -39,5 +39,9 @@ to save the process
 sudo pm2 save
 sudo pm2 startup
 ```
+
 that's it when ever you restart the pi the application will run automatically :)
 Hop you like it forlk it and change it to what suit you.
+
+### DEBUGGING
+if the camera didn't work check on what device it attahced to mine was on /dev/video0 and change it from the code
