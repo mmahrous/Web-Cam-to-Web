@@ -68,7 +68,7 @@ function Capture(){
 		  var frame = cam.frameRaw();
 		  io.sockets.emit('liveStream', "data:image/png;base64," + Buffer(frame).toString('base64'));
 		});
-	}, 200); 	
+	}, 50); 	
 }
  
 
